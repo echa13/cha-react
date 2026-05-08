@@ -65,7 +65,7 @@ export default function Dashboard() {
     <div className="min-h-screen bg-[#F9FAFB] p-8">
       <PageHeader
         title="Dashboard"
-        breadcrumb="Hi, Samantha. Welcome back to Sedap Admin!"
+        breadcrumb="Hi, Echa. Welcome back to Sedap Admin!"
       />
 
       {/* STAT CARDS */}

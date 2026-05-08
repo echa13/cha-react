@@ -210,3 +210,5 @@ export const customers = [
     loyalty: "Gold",
   },
 ];
+
+export default customers;

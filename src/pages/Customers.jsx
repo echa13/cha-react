@@ -16,7 +16,7 @@ export default function Customer() {
       >
         <button
           onClick={() => setShowForm(true)}
-          className="rounded-lg bg-green-500 px-4 py-2 text-white"
+          className="rounded-lg bg-pink-800 px-4 py-2 text-white"
         >
           Add Customer
         </button>
@@ -65,7 +65,7 @@ export default function Customer() {
 
             </select>
 
-            <button className="rounded-lg bg-blue-500 px-4 py-2 text-white">
+            <button className="rounded-lg bg-blue-900 px-4 py-2 text-white">
               Save Customer
             </button>
 

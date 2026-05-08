@@ -1,52 +1,26 @@
 import { FiCalendar, FiChevronDown } from "react-icons/fi";
 
-export default function PageHeader({
-  title,
-  breadcrumb,
-  children
-}) {
+export default function PageHeader({ title, breadcrumb, children }) {
   return (
-    <div className="mb-6 flex items-center justify-between">
-
-      {/* LEFT */}
+    <div className="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
       <div>
-        <h1 className="text-2xl font-bold text-gray-800">
-          {title}
-        </h1>
-
-        <p className="text-sm text-gray-400">
-          {breadcrumb}
-        </p>
+        <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">{title}</h2>
+        <nav className="flex items-center gap-2 mt-1">
+          <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">{breadcrumb}</span>
+        </nav>
       </div>
 
-      {/* RIGHT */}
-      <div className="flex items-center gap-4">
-
-        {/* CHILDREN */}
+      <div className="flex items-center gap-3">
         {children}
-
-        {/* FILTER */}
-        <div className="flex cursor-pointer items-center gap-2 rounded-lg bg-white px-4 py-2 shadow-sm">
-
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-100">
-            <FiCalendar
-              className="text-blue-500"
-              size={18}
-            />
+        <div className="flex cursor-pointer items-center gap-4 rounded-2xl bg-white border border-gray-100 p-2 pr-5 shadow-sm hover:shadow-md transition-shadow">
+          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600 shadow-inner">
+            <FiCalendar size={20} />
           </div>
-
-          <div className="text-sm">
-            <p className="font-medium text-gray-700">
-              Filter Periode
-            </p>
-
-            <p className="text-xs text-gray-400">
-              17 April 2020 - 21 May 2020
-            </p>
+          <div>
+            <p className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Filter Periode</p>
+            <p className="text-sm font-bold text-gray-700">17 Apr - 21 May 2024</p>
           </div>
-
-          <FiChevronDown className="text-gray-400" />
-
+          <FiChevronDown className="ml-2 text-gray-300" />
         </div>
       </div>
     </div>

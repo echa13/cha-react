@@ -16,12 +16,13 @@ body {
 @theme {
     --font-barlow: "Barlow", sans-serif;
     --font-poppins: "Poppins", sans-serif;
-    --color-latar: #f3f4f6;
-    --color-teks: #374151; 
-    --color-teks-samping: #6b7280;
-    --color-garis: #e5e7eb; 
-    --color-hijau: #00B074; 
-    --color-merah: #ef4444; 
-    --color-biru: #3b82f6;
-    --color-kuning: #f59e0b; 
+    --color-latar: #FFF5F7; /* Pink sangat muda untuk background */
+    --color-teks: #4A3036; /* Cokelat gelap kemerahan agar tidak kaku */
+    --color-teks-samping: #A0848B;
+    --color-garis: #FDE2E8; 
+    --color-pink-soft: #FFC0CB; /* Pink lucu */
+    --color-pink-bold: #FF85A1; /* Pink tegas untuk tombol aktif */
+    --color-merah: #FF4D6D; 
+    --color-biru: #A2D2FF;
+    --color-kuning: #FFD97D; 
 }

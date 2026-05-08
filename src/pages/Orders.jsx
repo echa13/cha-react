@@ -16,7 +16,7 @@ export default function Orders() {
       >
         <button
           onClick={() => setShowForm(true)}
-          className="rounded-lg bg-green-500 px-4 py-2 text-white"
+          className="rounded-lg bg-blue-900 px-4 py-2 text-white"
         >
           Add Orders
         </button>
