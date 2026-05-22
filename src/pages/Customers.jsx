@@ -65,7 +65,7 @@ export default function Customer() {
 
             </select>
 
-            <button className="rounded-lg bg-blue-900 px-4 py-2 text-white">
+            <button className="rounded-lg bg-pink-800 px-4 py-2 text-white">
               Save Customer
             </button>
 
