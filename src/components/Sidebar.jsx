@@ -1,4 +1,4 @@
-import { FiList, FiUser, FiHeart } from "react-icons/fi";
+import { FiList, FiUser, FiHeart, FiPackage, FiShoppingCart } from "react-icons/fi"; // <-- Ditambahkan FiShoppingCart di sini
 import { MdSpaceDashboard } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
@@ -27,12 +27,17 @@ export default function Sidebar() {
           </li>
           <li>
             <NavLink to="/orders" className={menuClass}>
-              <FiList className="mr-4 text-2xl" /> Order List
+              <FiShoppingCart className="mr-4 text-2xl" /> Orders {/* <-- Ikon diganti jadi FiShoppingCart */}
             </NavLink>
           </li>
           <li>
             <NavLink to="/customer" className={menuClass}>
               <FiUser className="mr-4 text-2xl" /> Customers
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/products" className={menuClass}>
+              <FiPackage className="mr-4 text-2xl" /> Products
             </NavLink>
           </li>
         </ul>

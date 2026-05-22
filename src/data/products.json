@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "title": "Fudge Brownies Premium",
+    "code": "BCK-BR-001",
+    "category": "Bakery & Cakes",
+    "brand": "Lovely Kitchen",
+    "price": 85000,
+    "stock": 25,
+    "image": "https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 2,
+    "title": "Strawberry Chiffon Cake",
+    "code": "BCK-CC-002",
+    "category": "Bakery & Cakes",
+    "brand": "Lovely Kitchen",
+    "price": 150000,
+    "stock": 10,
+    "image": "https://images.unsplash.com/photo-1535141192574-5d4897c13636?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 3,
+    "title": "Croissant Butter Classic",
+    "code": "PAST-CR-003",
+    "category": "Pastry",
+    "brand": "Sedap Bakehouse",
+    "price": 22000,
+    "stock": 40,
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 4,
+    "title": "Pain au Chocolat",
+    "code": "PAST-PC-004",
+    "category": "Pastry",
+    "brand": "Sedap Bakehouse",
+    "price": 25000,
+    "stock": 35,
+    "image": "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 5,
+    "title": "Spaghetti Carbonara Creamy",
+    "code": "MNC-SP-005",
+    "category": "Main Course",
+    "brand": "Lovely Kitchen",
+    "price": 48000,
+    "stock": 30,
+    "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 6,
+    "title": "Nasi Goreng Special Sedap",
+    "code": "MNC-NG-006",
+    "category": "Main Course",
+    "brand": "Lovely Kitchen",
+    "price": 38000,
+    "stock": 50,
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 7,
+    "title": "Grilled Chicken Steak",
+    "code": "MNC-CS-007",
+    "category": "Main Course",
+    "brand": "Lovely Kitchen",
+    "price": 65000,
+    "stock": 15,
+    "image": "https://images.unsplash.com/photo-13028537?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 8,
+    "title": "Macaroni Schotel Large",
+    "code": "BCK-MS-008",
+    "category": "Bakery & Cakes",
+    "brand": "Lovely Kitchen",
+    "price": 75000,
+    "stock": 12,
+    "image": "https://images.unsplash.com/photo-1621510456681-23a23cfb5f57?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 9,
+    "title": "Iced Cafe Latte Premium",
+    "code": "BEV-CF-009",
+    "category": "Beverages",
+    "brand": "Sedap Coffee",
+    "price": 28000,
+    "stock": 100,
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 10,
+    "title": "Matcha Espresso Latte",
+    "code": "BEV-CF-010",
+    "category": "Beverages",
+    "brand": "Sedap Coffee",
+    "price": 32000,
+    "stock": 80,
+    "image": "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 11,
+    "title": "Signature Milk Tea",
+    "code": "BEV-NCF-011",
+    "category": "Beverages",
+    "brand": "Sedap Coffee",
+    "price": 24000,
+    "stock": 95,
+    "image": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 12,
+    "title": "Peach Earl Grey Tea",
+    "code": "BEV-NCF-012",
+    "category": "Beverages",
+    "brand": "Sedap Coffee",
+    "price": 26000,
+    "stock": 60,
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 13,
+    "title": "Tiramisu Klasik Cup",
+    "code": "DES-TR-013",
+    "category": "Dessert",
+    "brand": "Lovely Kitchen",
+    "price": 35000,
+    "stock": 20,
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 14,
+    "title": "Mango Panna Cotta",
+    "code": "DES-PC-014",
+    "category": "Dessert",
+    "brand": "Lovely Kitchen",
+    "price": 28000,
+    "stock": 18,
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 15,
+    "title": "French Fries Truffle Oil",
+    "code": "SNC-FF-015",
+    "category": "Snacks",
+    "brand": "Lovely Kitchen",
+    "price": 30000,
+    "stock": 45,
+    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 16,
+    "title": "Crispy Chicken Wings (6pcs)",
+    "code": "SNC-CW-016",
+    "category": "Snacks",
+    "brand": "Lovely Kitchen",
+    "price": 35000,
+    "stock": 25,
+    "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 17,
+    "title": "Cinnamon Roll Extra Glaze",
+    "code": "BCK-CR-017",
+    "category": "Bakery & Cakes",
+    "brand": "Sedap Bakehouse",
+    "price": 26000,
+    "stock": 22,
+    "image": "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 18,
+    "title": "Almond Croissant",
+    "code": "PAST-AC-018",
+    "category": "Pastry",
+    "brand": "Sedap Bakehouse",
+    "price": 28000,
+    "stock": 14,
+    "image": "https://images.unsplash.com/photo-1623334500530-9ddc9f029a24?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 19,
+    "title": "Beef Lasagna Personal Size",
+    "code": "MNC-LS-019",
+    "category": "Main Course",
+    "brand": "Lovely Kitchen",
+    "price": 55000,
+    "stock": 12,
+    "image": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 20,
+    "title": "Caesar Salad Grilled Chicken",
+    "code": "MNC-CS-020",
+    "category": "Main Course",
+    "brand": "Lovely Kitchen",
+    "price": 42000,
+    "stock": 15,
+    "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 21,
+    "title": "Red Velvet Slice Cake",
+    "code": "BCK-RV-021",
+    "category": "Bakery & Cakes",
+    "brand": "Lovely Kitchen",
+    "price": 38000,
+    "stock": 16,
+    "image": "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 22,
+    "title": "Lotus Biscoff Cheesecake",
+    "code": "BCK-BC-022",
+    "category": "Bakery & Cakes",
+    "brand": "Lovely Kitchen",
+    "price": 45000,
+    "stock": 8,
+    "image": "https://images.unsplash.com/photo-1524351199679-46cddf530c04?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 23,
+    "title": "Iced Chocolate Lava",
+    "code": "BEV-NCF-023",
+    "category": "Beverages",
+    "brand": "Sedap Coffee",
+    "price": 27000,
+    "stock": 75,
+    "image": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 24,
+    "title": "Avocado Coffee Float",
+    "code": "BEV-CF-024",
+    "category": "Beverages",
+    "brand": "Sedap Coffee",
+    "price": 35000,
+    "stock": 30,
+    "image": "https://images.unsplash.com/photo-1596078841242-12f73dc6ef65?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 25,
+    "title": "Banana Fritters Extra Cheese",
+    "code": "SNC-BF-025",
+    "category": "Snacks",
+    "brand": "Lovely Kitchen",
+    "price": 24000,
+    "stock": 40,
+    "image": "https://images.unsplash.com/photo-1566813587042-3a8764024c03?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 26,
+    "title": "Garlic Bread (4pcs)",
+    "code": "SNC-GB-026",
+    "category": "Snacks",
+    "brand": "Sedap Bakehouse",
+    "price": 18000,
+    "stock": 50,
+    "image": "https://images.unsplash.com/photo-1573145959145-2195f2ed62d3?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 27,
+    "title": "Lemon Meringue Tart",
+    "code": "DES-LT-027",
+    "category": "Dessert",
+    "brand": "Lovely Kitchen",
+    "price": 32000,
+    "stock": 11,
+    "image": "https://images.unsplash.com/photo-1519869325930-281384150729?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 28,
+    "title": "Churros with Chocolate Dip",
+    "code": "DES-CH-028",
+    "category": "Dessert",
+    "brand": "Lovely Kitchen",
+    "price": 25000,
+    "stock": 20,
+    "image": "https://images.unsplash.com/photo-1580210212354-94b63e9f3957?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 29,
+    "title": "Virgin Mojito Mint",
+    "code": "BEV-NCF-029",
+    "category": "Beverages",
+    "brand": "Sedap Coffee",
+    "price": 25000,
+    "stock": 65,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 30,
+    "title": "Soft Cookies Double Choco",
+    "code": "BCK-SC-030",
+    "category": "Bakery & Cakes",
+    "brand": "Lovely Kitchen",
+    "price": 15000,
+    "stock": 60,
+    "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500&auto=format&fit=crop&q=60"
+  }
+]

@@ -21,6 +21,8 @@ const Forgot = React.lazy(() => import("./pages/auth/Forgot"))
 const MainLayout = React.lazy(() => import("./layouts/MainLayout"))
 const AuthLayout = React.lazy(() => import("./layouts/AuthLayout"))
 
+const Products = React.lazy(() => import("./pages/Products"))
+const ProductsDetail = React.lazy(() => import("./pages/ProductsDetail"))
 
 function App() {
   // Tambahkan RETURN di sini
@@ -32,6 +34,9 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/customer" element={<Customers />} />
+        
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductsDetail />} /> 
       
 
       {/* Route yang TIDAK menggunakan Sidebar (Halaman Full Screen) */}

@@ -29,7 +29,7 @@ export default function Dashboard() {
     { name: "Revenue", value: 62 },
   ];
 
-  const COLORS = ["#10B981", "#3B82F6", "#F59E0B"]; // Warna lebih modern (Emerald, Blue, Amber)
+  const COLORS = ["#BE185D", "#F472B6", "#FBCFE8"]; // Pink-700, Pink-400, Pink-100
 
   const chartData = [
     { day: "Sun", value: 20 },
@@ -42,18 +42,18 @@ export default function Dashboard() {
   ];
 
   // Komponen Reusable untuk Stat Card
-  const StatCard = ({ icon: Icon, badge: BadgeIcon, value, label, trend, isUp, colorClass, bgColor }) => (
+  const StatCard = ({ icon: Icon, badge: BadgeIcon, value, label, trend, isUp, colorClass, bgColor, badgeBg, trendColorClass }) => (
     <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-50 flex items-center gap-5 hover:shadow-md transition-all duration-300 group">
       <div className={`relative w-14 h-14 flex items-center justify-center ${bgColor} rounded-2xl group-hover:scale-110 transition-transform`}>
         <Icon className={colorClass} size={26} />
-        <div className={`absolute -top-2 -right-2 w-6 h-6 flex items-center justify-center ${isUp ? 'bg-emerald-500' : 'bg-rose-500'} border-4 border-white rounded-full`}>
+        <div className={`absolute -top-2 -right-2 w-6 h-6 flex items-center justify-center ${badgeBg} border-4 border-white rounded-full`}>
           <BadgeIcon className="text-white" size={10} />
         </div>
       </div>
       <div className="flex-1">
         <h2 className="text-2xl font-bold text-gray-800">{value}</h2>
         <p className="text-sm font-medium text-gray-500 mb-1">{label}</p>
-        <div className={`flex items-center gap-1 text-xs font-bold ${isUp ? 'text-emerald-500' : 'text-rose-500'}`}>
+        <div className={`flex items-center gap-1 text-xs font-bold ${trendColorClass || (isUp ? 'text-pink-600' : 'text-rose-500')}`}>
           {isUp ? <FiTrendingUp /> : <FiTrendingDown />}
           <span>{trend}</span>
         </div>
@@ -72,26 +72,29 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <StatCard 
           icon={FiFileText} badge={FiPlus} value="75" label="Total Orders" 
-          trend="4% (30 days)" isUp={true} colorClass="text-emerald-600" bgColor="bg-emerald-50"
+          trend="4% (30 days)" isUp={true} colorClass="text-pink-700" bgColor="bg-pink-50" badgeBg="bg-pink-600"
         />
+        
+        {/* KARTU DIUBAH: Sekarang menggunakan warna Pink Soft (text-pink-500 & bg-pink-50/50) agar serasi */}
         <StatCard 
           icon={FiBox} badge={FiCheck} value="357" label="Total Delivered" 
-          trend="4% (30 days)" isUp={true} colorClass="text-blue-600" bgColor="bg-blue-50"
+          trend="4% (30 days)" isUp={true} colorClass="text-pink-500" bgColor="bg-pink-50/50" badgeBg="bg-pink-400" trendColorClass="text-pink-500"
         />
+        
         <StatCard 
           icon={FiX} badge={FiX} value="65" label="Total Canceled" 
-          trend="25% (30 days)" isUp={false} colorClass="text-rose-600" bgColor="bg-rose-50"
+          trend="25% (30 days)" isUp={false} colorClass="text-rose-600" bgColor="bg-rose-50" badgeBg="bg-rose-500"
         />
         <StatCard 
           icon={FiShoppingBag} badge={FiCheck} value="$128" label="Total Revenue" 
-          trend="12% (30 days)" isUp={false} colorClass="text-amber-600" bgColor="bg-amber-50"
+          trend="12% (30 days)" isUp={false} colorClass="text-amber-600" bgColor="bg-amber-50" badgeBg="bg-amber-500"
         />
       </div>
 
       {/* CHART SECTION */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        {/* LINE CHART (Lebih Lebar) */}
+        {/* LINE CHART */}
         <div className="lg:col-span-2 bg-white p-7 rounded-2xl shadow-sm border border-gray-50">
           <div className="flex justify-between items-center mb-6">
             <div>
@@ -121,9 +124,9 @@ export default function Dashboard() {
                 <Line
                   type="monotone"
                   dataKey="value"
-                  stroke="#10B981"
+                  stroke="#BE185D"
                   strokeWidth={4}
-                  dot={{ r: 6, fill: '#10B981', strokeWidth: 3, stroke: '#fff' }}
+                  dot={{ r: 6, fill: '#BE185D', strokeWidth: 3, stroke: '#fff' }}
                   activeDot={{ r: 8 }}
                 />
               </LineChart>
@@ -137,7 +140,7 @@ export default function Dashboard() {
             <h3 className="text-lg font-bold text-gray-800">Order Analytics</h3>
             <p className="text-sm text-gray-400">Distribution by category</p>
           </div>
-          <div className="h-64 w-full">
+          <div className="h-64 w-full relative">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
@@ -156,6 +159,10 @@ export default function Dashboard() {
                 <Tooltip />
               </PieChart>
             </ResponsiveContainer>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+              <p className="text-3xl font-extrabold text-pink-800">165</p>
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">Total</p>
+            </div>
           </div>
           {/* Legend Custom */}
           <div className="flex gap-4 mt-2">
