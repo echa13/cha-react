@@ -1,4 +1,4 @@
-import { FiList, FiUser, FiHeart, FiPackage, FiShoppingCart } from "react-icons/fi"; // <-- Ditambahkan FiShoppingCart di sini
+import { FiList, FiUser, FiHeart, FiPackage, FiShoppingCart } from "react-icons/fi"; 
 import { MdSpaceDashboard } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
@@ -27,7 +27,7 @@ export default function Sidebar() {
           </li>
           <li>
             <NavLink to="/orders" className={menuClass}>
-              <FiShoppingCart className="mr-4 text-2xl" /> Orders {/* <-- Ikon diganti jadi FiShoppingCart */}
+              <FiShoppingCart className="mr-4 text-2xl" /> Orders
             </NavLink>
           </li>
           <li>
@@ -38,6 +38,13 @@ export default function Sidebar() {
           <li>
             <NavLink to="/products" className={menuClass}>
               <FiPackage className="mr-4 text-2xl" /> Products
+            </NavLink>
+          </li>
+          
+          {/* MENU BARU UNTUK PLAYGROUND COMPONENTS */}
+          <li>
+            <NavLink to="/components" className={menuClass}>
+              <FiList className="mr-4 text-2xl" /> Components
             </NavLink>
           </li>
         </ul>

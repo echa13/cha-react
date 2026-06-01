@@ -1,6 +1,7 @@
-import { FiSearch, FiBell, FiMessageSquare, FiSettings } from "react-icons/fi";
+import { FiSearch, FiBell, FiSettings } from "react-icons/fi";
 
-export default function Header() {
+// Menambahkan props { userImage } agar bisa menerima foto profil dari MainLayout
+export default function Header({ userImage }) {
   return (
     <header className="sticky top-0 z-10 flex items-center justify-between bg-white/70 backdrop-blur-lg px-8 py-4 border-b border-garis">
       <div className="relative w-96">
@@ -29,7 +30,12 @@ export default function Header() {
             <p className="text-[10px] text-pink-bold font-bold mt-1 uppercase tracking-tighter">Admin</p>
           </div>
           <div className="p-1 rounded-full bg-gradient-to-tr from-pink-soft to-pink-bold">
-            <img src="https://i.pravatar.cc/100?u=cute" className="w-9 h-9 rounded-full border-2 border-white" alt="profile" />
+            {/* Menggunakan userImage dari assets, jika gagal/kosong otomatis pakai avatar default */}
+            <img 
+              src={userImage || "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150"} 
+              className="w-9 h-9 rounded-full border-2 border-white object-cover" 
+              alt="profile" 
+            />
           </div>
         </div>
       </div>
