@@ -1,6 +1,4 @@
 import { FiSearch, FiBell, FiSettings } from "react-icons/fi";
-
-// Menambahkan props { userImage } agar bisa menerima foto profil dari MainLayout
 export default function Header({ userImage }) {
   return (
     <header className="sticky top-0 z-10 flex items-center justify-between bg-white/70 backdrop-blur-lg px-8 py-4 border-b border-garis">
@@ -8,7 +6,7 @@ export default function Header({ userImage }) {
         <FiSearch className="absolute left-5 top-1/2 -translate-y-1/2 text-pink-soft" size={18} />
         <input
           type="text"
-          placeholder="Cari apa hari ini, Kak?..."
+          placeholder="Apa cari nya kak ?"
           className="w-full bg-latar border border-garis rounded-full py-2.5 pl-12 pr-4 outline-none focus:ring-4 focus:ring-pink-soft/20 focus:border-pink-soft transition-all text-sm"
         />
       </div>
