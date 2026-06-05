@@ -1,12 +1,21 @@
-import { FiList, FiUser, FiHeart, FiPackage, FiShoppingCart } from "react-icons/fi"; 
+import {
+  FiList,
+  FiUser,
+  FiHeart,
+  FiPackage,
+  FiShoppingCart,
+} from "react-icons/fi";
 import { MdSpaceDashboard } from "react-icons/md";
 import { NavLink } from "react-router-dom";
+import { FiCpu } from "react-icons/fi";
 
 const menuClass = ({ isActive }) =>
   `flex items-center rounded-2xl px-5 py-3.5 transition-all duration-300 group
-  ${isActive 
-    ? "bg-pink-bold text-white shadow-lg shadow-pink-bold/30 font-semibold scale-105" 
-    : "text-teks-samping hover:bg-pink-soft/20 hover:text-pink-bold"}`;
+  ${
+    isActive
+      ? "bg-pink-bold text-white shadow-lg shadow-pink-bold/30 font-semibold scale-105"
+      : "text-teks-samping hover:bg-pink-soft/20 hover:text-pink-bold"
+  }`;
 
 export default function Sidebar() {
   return (
@@ -15,7 +24,9 @@ export default function Sidebar() {
         <h1 className="text-4xl font-black tracking-tight text-teks font-poppins italic">
           Sedap<span className="text-pink-bold">❤</span>
         </h1>
-        <p className="text-[10px] font-bold text-pink-soft uppercase tracking-[0.2em] mt-1">Lovely Kitchen Admin</p>
+        <p className="text-[10px] font-bold text-pink-soft uppercase tracking-[0.2em] mt-1">
+          Lovely Kitchen Admin
+        </p>
       </div>
 
       <nav className="flex-1">
@@ -40,11 +51,14 @@ export default function Sidebar() {
               <FiPackage className="mr-4 text-2xl" /> Products
             </NavLink>
           </li>
-          
-          {/* MENU BARU UNTUK PLAYGROUND COMPONENTS */}
           <li>
             <NavLink to="/components" className={menuClass}>
               <FiList className="mr-4 text-2xl" /> Components
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/fitur-xyz" className={menuClass}>
+              <FiCpu className="mr-4 text-2xl" /> Fitur XYZ
             </NavLink>
           </li>
         </ul>
@@ -56,7 +70,9 @@ export default function Sidebar() {
           <p className="text-xs font-bold text-pink-bold mb-2 flex items-center gap-2">
             <FiHeart /> Spread the love
           </p>
-          <p className="text-[13px] text-teks/70 leading-relaxed mb-4">Wanna add some more sweetness to your menu?</p>
+          <p className="text-[13px] text-teks/70 leading-relaxed mb-4">
+            Wanna add some more sweetness to your menu?
+          </p>
           <button className="w-full rounded-xl bg-pink-bold py-2.5 text-xs font-bold text-white hover:brightness-105 transition-all shadow-md">
             + Add New Menu
           </button>
