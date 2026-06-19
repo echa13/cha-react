@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import "./assets/tailwind.css";
 import Loading from "./components/Loading";
 import Components from "./pages/Components"; // Import komponen baru kamu
+import Note from "./pages/Note";
 
 // Layout & Pages (Bawaan asli project kamu)
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
@@ -30,6 +31,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductsDetail />} />
           <Route path="/fitur-xyz" element={<FiturXyz />} />
+          <Route path="/notes" element={<Note />}/>
 
           {/* HANYA MENAMBAHKAN BARIS INI */}
           <Route path="/components" element={<Components />} />

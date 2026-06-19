@@ -9,6 +9,7 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { FiCpu } from "react-icons/fi";
 import { FiLayers } from "react-icons/fi";
+import { FiEdit3 } from "react-icons/fi";
 
 const menuClass = ({ isActive }) =>
   `flex items-center rounded-2xl px-5 py-3.5 transition-all duration-300 group
@@ -60,6 +61,11 @@ export default function Sidebar() {
           <li>
             <NavLink to="/fitur-xyz" className={menuClass}>
               <FiCpu className="mr-4 text-2xl" /> Fitur XYZ
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/notes" className={menuClass}>
+              <FiEdit3 className="mr-4 text-2xl" /> Note
             </NavLink>
           </li>
         </ul>
