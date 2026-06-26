@@ -1,16 +1,44 @@
-export default function AlertBox({ type = "info", children }) {
-    const baseClass =
-        "px-4 py-3 rounded-2xl mb-6 shadow-lg border text-sm"
+import { FiCheckCircle, FiAlertCircle, FiInfo, FiX } from "react-icons/fi";
+import { useState } from "react";
 
-    const styles = {
-        success: "bg-green-100 border-green-400 text-green-700",
-        error: "bg-red-100 border-red-400 text-red-700",
-        info: "bg-blue-100 border-blue-400 text-blue-700",
-    }
+export default function AlertBox({ type = "info", children, dismissible = true }) {
+  const [visible, setVisible] = useState(true);
 
-    return (
-        <div className={`${baseClass} ${styles[type] || styles.info}`}>
-            {children}
-        </div>
-    )
+  if (!visible) return null;
+
+  const styles = {
+    success: {
+      bg: "bg-green-50 border-green-200 text-green-800",
+      icon: <FiCheckCircle className="text-green-500 text-xl shrink-0" />,
+    },
+    error: {
+      bg: "bg-red-50 border-red-200 text-red-800",
+      icon: <FiAlertCircle className="text-red-500 text-xl shrink-0" />,
+    },
+    info: {
+      bg: "bg-blue-50 border-blue-200 text-blue-800",
+      icon: <FiInfo className="text-blue-500 text-xl shrink-0" />,
+    },
+  };
+
+  const current = styles[type] || styles.info;
+
+  return (
+    <div
+      className={`flex items-center gap-3 px-5 py-4 rounded-2xl border shadow-lg mb-5
+        animate-slide-down ${current.bg}`}
+    >
+      {current.icon}
+      <p className="flex-1 text-sm font-medium">{children}</p>
+      {dismissible && (
+        <button
+          onClick={() => setVisible(false)}
+          className="opacity-50 hover:opacity-100 transition-opacity"
+          aria-label="Tutup"
+        >
+          <FiX size={16} />
+        </button>
+      )}
+    </div>
+  );
 }

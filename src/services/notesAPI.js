@@ -1,13 +1,15 @@
 import axios from 'axios'
 
-const API_URL = "https://qbduqeoiehfkioaqzcxg.supabase.co/rest/v1/note"
-const API_KEY = "sb_publishable_RG16Z9SdALtqjmo-ofjrZw_gWsAu1dr"
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY
 
 const headers = {
-    apikey: API_KEY,
-    Authorization: `Bearer ${API_KEY}`,
+    apikey: supabaseKey,
+    Authorization: `Bearer ${supabaseKey}`,
     "Content-Type": "application/json",
 }
+
+const API_URL = `${supabaseUrl}/rest/v1/note`
 
 export const notesAPI = {
     async fetchNotes() {
